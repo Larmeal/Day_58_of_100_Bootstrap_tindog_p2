@@ -2,17 +2,6 @@ body {
     font-family: "Montserrat";
 }
 
-#title {
-
-    background-color: #ff4c68;
-    color: #fff;
-}
-
-.container-fluid {
-    padding: 3% 15%;
-}
-
-
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -28,7 +17,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
@@ -38,6 +27,9 @@ p {
     font-weight: 500;
 }
 
+.container-fluid {
+    padding: 3% 15% 7%;
+}
 
 
 /* Navbar */
@@ -69,23 +61,49 @@ p {
     margin: 5% 3% 5% 0;
 }
 
-/* Title-image */
+/* Title */
+
+#title {
+
+    background-color: #ff4c68;
+    color: #fff;
+    z-index: 0;
+}
 
 .title-image {
-    width: 60%;
+    width: 50%;
     transform: rotate(15deg);
-    margin-left: 12%;
+    margin-left: 15%;
+    position: absolute;
+}
+
+@media (max-width: 1156px) {
+    
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0deg);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
 }
 
 /* Section features */
 
 #features {
    padding: 7% 0%;
+   background-color: #fff;
+   position: relative;
+   z-index: 1;
 }
 
 .function {
     text-align: center;
-    
 }
 
 .icon-image {
@@ -101,7 +119,71 @@ p {
 
 #testimonials {
     text-align: center;
-    padding: 7% 15%;
     background-color: #ef8172;
     color: #fff;
+}
+
+.carousel-item {
+    padding: 7% 15% 5%;
+}
+
+.testimonials-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 25px;
+}
+
+/* Press id */
+
+#press {
+    text-align: center;
+    background-color: #ef8172;
+}
+
+
+.press-image {
+    width: 15%;
+    margin: 20px 40px 50px;
+}
+
+/* pricing */
+
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-col {
+    padding: 3% 2%;
+}
+
+/* cta */
+
+#cta {
+    text-align: center;
+    background-color: #ff4c68;
+    color: #fff;
+    padding: 7% 20%;
+}
+
+.cta-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.cta-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* Footer */
+
+#footer {
+    text-align: center;
+    padding: 7% 7% 1%;
+}
+
+.icon-footer {
+    margin: 0 1% 1% ;
 }
